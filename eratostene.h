@@ -6,6 +6,7 @@
 class Eratostene {
   protected:
     std::vector<int> cache;
+    bool generate(int);
 
   public:
     Eratostene();
