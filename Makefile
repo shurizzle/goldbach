@@ -47,4 +47,4 @@ clean-bin:
 
 clean: clean-objs clean-bin
 
-.PHONY: all dist clen-objs clean-bin clean
+.PHONY: all dist clean-objs clean-bin clean
