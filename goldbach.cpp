@@ -1,8 +1,6 @@
 #include "goldbach.h"
 #include "eratostene.h"
 
-#include <iostream>
-
 std::vector<int> goldbach(int n) {
   std::vector<int> res;
 

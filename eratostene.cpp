@@ -1,7 +1,6 @@
 #include "eratostene.h"
 #include <algorithm>
 #include <cmath>
-#include <iostream>
 
 Eratostene::Eratostene() {
   cache.push_back(_latest = 2);
