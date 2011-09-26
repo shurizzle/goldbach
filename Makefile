@@ -37,8 +37,14 @@ dist:
 	@$(GZIP) $(PROG).tar
 	@$(RM) -r $(PROG)
 
-clean:
-	@echo "RM $(OBJECTS) $(TARGET)"
-	@$(RM) -f $(OBJECTS) $(TARGET)
+clean-objs:
+	@echo "RM $(OBJECTS)"
+	@$(RM) -f $(OBJECTS)
 
-.PHONY: all clean
+clean-bin:
+	@echo "RM $(TARGET)"
+	@$(RM) -f $(TARGET)
+
+clean: clean-objs clean-bin
+
+.PHONY: all dist clen-objs clean-bin clean
